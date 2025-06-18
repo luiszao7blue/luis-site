@@ -1,0 +1,47 @@
+
+html
+Copiar
+Editar
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfólio de Luis Gustao</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <img src="images/perfil.jpg" alt="Foto de Luis Gustao" class="profile-pic">
+    <h1>Luis Gustao</h1>
+    <p>Estudante apaixonado por História, Inglês e viagens 🌍</p>
+  </header>
+
+  <section id="sobre">
+    <h2>Sobre Mim</h2>
+    <p>Olá! Me chamo <strong>Luis Gustao</strong>, tenho 16 anos, sou alto e moreno. Amo aprender sobre a História do mundo e me dedico diariamente ao estudo da língua inglesa. Sonho em conhecer diferentes países, culturas e pessoas ao redor do planeta.</p>
+  </section>
+
+  <section id="interesses">
+    <h2>Meus Interesses</h2>
+    <ul>
+      <li>📘 História Antiga e Contemporânea</li>
+      <li>🗣️ Inglês e outras línguas</li>
+      <li>✈️ Viagens e culturas internacionais</li>
+      <li>🎧 Músicas de diferentes países</li>
+    </ul>
+  </section>
+
+  <section id="contato">
+    <h2>Fale Comigo</h2>
+    <p>Email: <a href="mailto:luis.gustao@email.com">luis.gustao@email.com</a></p>
+    <p>Instagram: <a href="https://instagram.com/luisgustao" target="_blank">@luisgustao</a></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Luis Gustao. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
