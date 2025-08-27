@@ -35,20 +35,22 @@ A página é dividida em seções:
 
 ---
 
-## 💻 Código da Seção Index
-
-```html
 <section id="index" class="container my-5 text-center">
-    <h1 class="mb-4">Lady Gaga</h1>
+  <h1 class="mb-4">Lady Gaga</h1>
 
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Lady_Gaga_Grammys_2017.png/800px-Lady_Gaga_Grammys_2017.png"
-         alt="Lady Gaga no Grammy Awards 2017"
-         class="img-fluid rounded shadow mb-3" loading="lazy">
-    <p class="text-muted small">
-        Imagem: Rogue Artists / CC BY 3.0
-    </p>
+  <figure class="mb-3">
+    <img 
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Lady_Gaga_Grammys_2017.png/800px-Lady_Gaga_Grammys_2017.png"
+      alt="Lady Gaga no Grammy Awards de 2017, vestindo traje preto com transparências"
+      class="img-fluid rounded shadow"
+      loading="lazy"
+    >
+    <figcaption class="text-muted small">
+      Imagem: Rogue Artists / CC BY 3.0
+    </figcaption>
+  </figure>
 
-    <p class="lead">
-        Lady Gaga é uma cantora, compositora e atriz norte-americana, conhecida por sua originalidade e versatilidade artística.
-    </p>
+  <p class="lead">
+    Lady Gaga é uma cantora, compositora e atriz norte-americana, conhecida por sua originalidade e versatilidade artística.
+  </p>
 </section>
