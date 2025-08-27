@@ -1,144 +1,185 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lemon&display=swap');
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lady Gaga - Vida e Carreira</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
-    <style>
-        /* Fundo multicolorido */
-        body {
-            background: linear-gradient(135deg, #ff4ecd, #ff6f00, #ffeb3b, #4caf50, #2196f3, #9c27b0);
-            background-size: 400% 400%;
-            animation: gradientBG 15s ease infinite;
-            color: white;
-        }
+:root {
+    --gradiente-primario: linear-gradient(45deg, #FF7E5F, #feb47b, #FF6A00, #FF1493, #00BFFF); /* Gradiente multicolorido */
+    --gradiente-secundario: linear-gradient(135deg, #00DBDE, #FC00FF); /* Gradiente secundário suave */
+    --laranja-claro: #FF862A;
+    --azul-claro: #00BFFF;
+    --rosa-claro: #FF1493;
+    --verde-claro: #00FF7F;
+    --amarelo-claro: #FFD700;
+}
 
-        @keyframes gradientBG {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
+body {
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    background: var(--gradiente-primario); /* Fundo com gradiente multicolorido */
+    color: #fff; /* Texto branco para contraste */
+}
 
-        /* Tornar as caixas de texto mais legíveis */
-        section, footer, header {
-            background-color: rgba(0, 0, 0, 0.5);
-            border-radius: 15px;
-            padding: 20px;
-            margin-bottom: 20px;
-        }
+header {
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco transparente */
+    padding: 2rem 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
 
-        img {
-            border: 3px solid white;
-        }
-    </style>
-</head>
+section {
+    padding-bottom: 5rem;
+}
 
-<body>
-    <header class="p-5">
-        <nav class="container d-flex justify-content-between align-items-center">
-            <h1 class="h3">Lady Gaga</h1>
-            <ul class="nav">
-                <li class="nav-item"><a class="nav-link text-white" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#biografia">Biografia</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#galeria">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link text-white" href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-    </header>
+.nav-link {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
-    <main class="container my-5">
+.nav-link:hover {
+    color: var(--laranja-claro);
+}
 
-        <!-- INÍCIO -->
-        <section id="inicio" class="text-center">
-            <h2 class="display-4">Bem-vindo ao universo de Lady Gaga</h2>
-            <p class="lead">Explore a trajetória de uma das maiores artistas do século XXI.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Lady_Gaga_presents_artRAVE_Artpop_Ball_2014.jpg/800px-Lady_Gaga_presents_artRAVE_Artpop_Ball_2014.jpg"
-                alt="Lady Gaga no artRAVE: The ARTPOP Ball Tour, 2014"
-                class="img-fluid rounded shadow" loading="lazy">
-            <p class="text-muted small mt-2">Imagem: Justin Higuchi / CC BY 2.0</p>
-        </section>
+.inicio-fundo {
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
+    background-position: right;
+    border-radius: 80px;
+    width: 100%;
+    height: 606px;
+    padding: 40px;
+    margin: 0 auto;
+    background: var(--gradiente-secundario); /* Gradiente como fundo */
+}
 
-        <!-- BIOGRAFIA -->
-        <section id="biografia" class="my-5">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <h2>Quem é Lady Gaga?</h2>
-                    <p>Lady Gaga, nascida Stefani Joanne Angelina Germanotta em 28 de março de 1986, é uma cantora,
-                        compositora, atriz e produtora musical americana. Reconhecida por sua versatilidade musical e visuais ousados, Gaga alcançou fama mundial com o álbum "The Fame" (2008), que trouxe hits como "Just Dance" e "Poker Face".</p>
-                    <p>Além da música, Lady Gaga é reconhecida por seu ativismo em causas sociais e por suas atuações premiadas no cinema, como em *Nasce Uma Estrela* (2018) e *Casa Gucci* (2021).</p>
-                </div>
-                <div class="col-md-6 text-center">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Lady_Gaga_with_Obama_staffers.jpg/800px-Lady_Gaga_with_Obama_staffers.jpg"
-                        alt="Lady Gaga com equipe do governo Obama"
-                        class="img-fluid rounded-4 shadow" loading="lazy">
-                    <p class="text-muted small mt-2">Imagem: Pete Souza / Domínio Público</p>
-                </div>
-            </div>
-        </section>
+/* Posicionamento da imagem à direita */
+.img-inicio {
+    position: absolute;
+    right: 0;
+    top: 18rem;
+    width: 45rem;
+    height: auto;
+}
 
-        <!-- GALERIA -->
-        <section id="galeria" class="my-5">
-            <h2 class="text-center">Galeria</h2>
-            <div class="row g-4 mt-3">
-                <div class="col-md-4">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Lady_Gaga_artRAVE_Paris_2014_4.jpg/640px-Lady_Gaga_artRAVE_Paris_2014_4.jpg"
-                        class="img-fluid rounded-3" alt="Lady Gaga performando" loading="lazy">
-                    <p class="text-muted small">Imagem: Justin Higuchi / CC BY 2.0</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Lady_Gaga_on_Nov_1_2010.jpg/640px-Lady_Gaga_on_Nov_1_2010.jpg"
-                        class="img-fluid rounded-3" alt="Lady Gaga em 2010" loading="lazy">
-                    <p class="text-muted small">Imagem: aphrodite-in-nyc / CC BY 2.0</p>
-                </div>
-                <div class="col-md-4">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Lady_Gaga_Born_This_Way_Ball_2012.jpg/640px-Lady_Gaga_Born_This_Way_Ball_2012.jpg"
-                        class="img-fluid rounded-3" alt="Lady Gaga Born This Way Tour" loading="lazy">
-                    <p class="text-muted small">Imagem: karina3094 / CC BY 2.0</p>
-                </div>
-            </div>
-        </section>
+.esquerda-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
 
-        <!-- CONTATO -->
-        <section id="contato" class="my-5">
-            <div class="bg-light p-5 rounded-4 text-dark">
-                <h2 class="text-center mb-4">Entre em contato</h2>
-                <form>
-                    <div class="mb-3">
-                        <label for="nome" class="form-label">Nome</label>
-                        <input type="text" class="form-control" id="nome" placeholder="Seu nome completo">
-                    </div>
-                    <div class="mb-3">
-                        <label for="email" class="form-label">E-mail</label>
-                        <input type="email" class="form-control" id="email" placeholder="seu@email.com">
-                    </div>
-                    <div class="mb-3">
-                        <label for="mensagem" class="form-label">Mensagem</label>
-                        <textarea class="form-control" id="mensagem" rows="4" placeholder="Sua mensagem"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
-            </div>
-        </section>
-    </main>
+.botao-inicio {
+    background: var(--gradiente-primario);
+    border-radius: 30px;
+    border: none;
+    width: 14em;
+    height: 3em;
+    align-content: center;
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+}
 
-    <footer class="text-center p-3 mt-5">
-        <p>Siga nas redes sociais:</p>
-        <i class="bi bi-instagram mx-2"></i>
-        <i class="bi bi-twitter-x mx-2"></i>
-        <i class="bi bi-youtube mx-2"></i>
-        <p class="mt-3 small">Site educativo e sem fins comerciais. Imagens usadas com licença Creative Commons.</p>
-    </footer>
+.botao-inicio:hover {
+    background: var(--gradiente-secundario);
+}
 
-</body>
+.display-4 {
+    text-shadow: -5px 5px var(--laranja-claro);
+}
 
-</html>
+#tropicalia {
+    position: relative;
+    padding-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    background: url('img/flor.png') top right no-repeat, url('img/flor-esquerda.png') bottom left no-repeat;
+    background-size: 180px 180px;
+    background-color: rgba(255, 255, 255, 0.5); /* Fundo translúcido com gradiente por trás */
+}
+
+#tropicalia .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+}
+
+h2 {
+    font-family: 'Lemon', serif;
+    font-size: 2.5em;
+    font-style: normal;
+    color: var(--gradiente-secundario);
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+#galeria {
+    background-color: #FAF4F4;
+    padding: 5rem 0;
+}
+
+.fundo-galeria {
+    background: url('img/flor-bottom-direita.png') bottom right no-repeat;
+    background-size: 180px 180px;
+}
+
+#contato {
+    background-image: url('img/4965007.jpg');
+    background-size: cover;
+    padding: 4rem 0;
+}
+
+.formulario {
+    background-color: rgba(255, 255, 255, 0.8); /* Formulário com fundo transparente */
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+}
+
+.formulario button {
+    background-color: var(--gradiente-secundario);
+    border: none;
+    font-weight: bold;
+    color: white;
+}
+
+.formulario button:hover {
+    background-color: var(--gradiente-primario);
+}
+
+.form-control {
+    background-color: #F1EDEF;
+}
+
+.menu-acessibilidade {
+    position: fixed;
+    top: 2rem;
+    right: 20px;
+    z-index: 1000;
+}
+
+.rotacao-botao {
+    transform: rotate(-90deg);
+    transform-origin: right center;
+}
+
+.opcoes-acessibilidade {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.opcoes-acessibilidade button {
+    margin-bottom: 5px;
+    background-color: var(--gradiente-secundario);
+    color: white;
+}
+
+.opcoes-acessibilidade button:hover {
+    background-color: var(--gradiente-primario);
+}
+
+.apresenta-lista {
+    display: none;
+}
